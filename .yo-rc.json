@@ -1,7 +1,7 @@
 {
   "generator-angular-famous-ionic": {
     "appname": "monitorCloud",
-    "clientFolder": "y",
+    "clientFolder": "client",
     "ionic": true,
     "famous": true,
     "ngCordova": true,
