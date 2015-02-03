@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = function() {
     var cwd = process.env.INIT_CWD || '';
-    var clientFolder = 'y'; // the source file folder
+    var clientFolder = 'client'; // the source file folder
     var defaultTarget = 'app'; // the name of the app that corresponds to index.html
     var constants = {
         appname: 'famous-angular-yo',
@@ -69,7 +69,7 @@ module.exports = function() {
         serve: {
             host: 'localhost', //'0.0.0.0',
             port: 5000,
-            open: true,
+            open: false,
             browser: ['google chrome'], // ['google chrome', 'firefox'],
             localtunnel: false // true, false or 'famous-angular-yo'
         },
