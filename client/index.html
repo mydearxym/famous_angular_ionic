@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="platform-cordova">
+<body class="platform-cordova container">
 
     <h2 ng-controller="main.common.hello as helloCtrl">{{helloCtrl.message}}</h2>
     <h3 class="text-danger">well hello?</h3>
     <ui-view></ui-view>
-    
+
+    <script src="scripts/cordova.js"></script>
     <script src="scripts/bundle.js"></script>
 </body>
 
