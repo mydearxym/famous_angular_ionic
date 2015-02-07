@@ -1,0 +1,27 @@
+
+<fa-view>
+  <fa-modifier fa-translate="[20, 20, 0]">
+    <fa-surface>
+      <md-button class="md-primary" ng-click="vm.openBottomSheet()">
+        Open a Bottom Sheet!
+      </md-button>
+
+      <section layout="row" layout-sm="column" layout-align="center center">
+        <md-button class="md-raised">Button</md-button>
+        <md-button class="md-raised md-primary">Primary</md-button>
+        <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+        <md-button class="md-raised md-warn">Warn</md-button>
+        <div class="label">raised</div>
+      </section>
+
+
+      
+      <md-content class="md-padding">
+        Lorem ipsum dolor sit amet, ne quod novum mei.
+        <form style="padding: 20px;">
+          <md-text-float label="Company" ng-model="user.company" disabled> </md-text-float>
+        </form>
+      </md-content>
+    </fa-surface>
+  </fa-modifier>
+</fa-view>
