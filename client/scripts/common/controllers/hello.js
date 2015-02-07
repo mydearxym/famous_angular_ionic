@@ -8,7 +8,7 @@ module.exports = function(app) {
 
     function controller() {
         var vm = this;
-        vm.message = 'Hello World';
+        vm.message = 'hello famous';
         var activate = function() {
 
         };
