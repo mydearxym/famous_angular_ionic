@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.hybridframework.monitorCloud" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.hybridframework.monitorCloud" version="0.0.2">
   <name>monitorCloud</name>
   <description>monitorCloud</description>
-  <author email="monitorCloud@hybridframework" href="http://hybridframework.com/">
-      monitorCloud Team
-    </author>
+  <author email="monitorCloud@hybridframework" href="http://hybridframework.com/">monitorCloud Team</author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
