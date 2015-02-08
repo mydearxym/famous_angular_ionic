@@ -11,13 +11,23 @@
 </head>
 
 <body class="platform-cordova">
-    <!--<h2 ng-controller="main.common.hello as helloCtrl">{{helloCtrl.message}}</h2>-->
+
+<h2 ng-controller="main.common.hello as helloCtrl">
+  <span ng-click="helloCtrl.callme()">he{{helloCtrl.message}}</span>
+</h2>
+
+    <!--<h2 ng-controller="main.wtfctrl">-->
+      <!--{{callmsg}}-->
+      <!--<div ng-click="alert('he')">click</div>-->
+    <!--</h2>-->
+
     <!--<h3 class="text-danger">well hello?</h3>-->
     <!--<ui-view></ui-view>-->
+    <!--<fa-app class="full-screen">-->
 
-    <fa-app class="full-screen">
-      <ui-view></ui-view>
-    </fa-app>
+    <!--<fa-app>-->
+      <!--<ui-view></ui-view>-->
+    <!--</fa-app>-->
 
     <script src="scripts/cordova.js"></script>
     <script src="scripts/bundle.js"></script>

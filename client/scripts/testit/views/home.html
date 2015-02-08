@@ -2,13 +2,33 @@
 <fa-view>
   <!--<fa-modifier fa-translate="[20, 20, 0]">-->
   <fa-modifier fa-translate="[0, 0, 0]">
-    <fa-surface>
-      <md-button class="md-primary" ng-click="vm.openBottomSheet()">
-        Open a Bottom Sheet!
+    <fa-surface ng-controller="main.testit.testcontroller as Ctrl">
+      <hr>
+      <!--<button class="btn btn-danger" ng-click="Ctrl.functest()">{{Ctrl.message}}</button>-->
+      <button id="test" class="btn btn-danger" ng-click="Ctrl.functest()">*{{Ctrl.msg}}*</button>
+
+      <md-button class="md-raised md-primary">
+        <span ng-click="functest()">controller -- {{msg}}</span>
       </md-button>
 
+      <md-tabs md-selected="selectedIndex">
+        <md-tab ng-repeat="tab in tabs"
+                ng-disabled="tab.disabled"
+                label="{{tab.title}}">
+          <div class="demo-tab tab{{$index%4}}" layout="column" layout-fill layout-align="space-around center">
+            <div ng-bind="tab.content"></div>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            end
+          </div>
+        </md-tab>
+      </md-tabs>
+
+
       <div layout="row" layout-sm="column" layout-align="left left">
-        <md-button class="md-raised">Button</md-button>
+        <md-button class="md-raised">default-btn</md-button>
         <md-button class="md-raised md-primary">Primary</md-button>
         <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
       </div>
@@ -73,7 +93,21 @@
         </md-checkbox>
       </md-content>
 
+      <ion-tabs class="tabs-positive tabs-icon-only">
 
+        <ion-tab title="Home" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline">
+          <!-- Tab 1 content -->
+        </ion-tab>
+
+        <ion-tab title="About" icon-on="ion-ios7-clock" icon-off="ion-ios7-clock-outline">
+          <!-- Tab 2 content -->
+        </ion-tab>
+
+        <ion-tab title="Settings" icon-on="ion-ios7-gear" icon-off="ion-ios7-gear-outline">
+          <!-- Tab 3 content -->
+        </ion-tab>
+
+      </ion-tabs>
 
     </fa-surface>
   </fa-modifier>

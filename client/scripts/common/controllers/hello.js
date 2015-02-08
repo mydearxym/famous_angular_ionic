@@ -1,20 +1,24 @@
 'use strict';
 var controllername = 'hello';
 
-module.exports = function(app) {
-    /*jshint validthis: true */
+module.exports = function (app) {
+  /*jshint validthis: true */
 
-    var deps = [];
+  var deps = [];
 
-    function controller() {
-        var vm = this;
-        vm.message = 'hello famous';
-        var activate = function() {
-
-        };
-        activate();
+  function controller() {
+    var vm = this;
+    vm.message = 'hello famous';
+    vm.callme = function(){
+      alert("vm.callme");
     }
 
-    controller.$inject = deps;
-    app.controller(app.name + '.' + controllername, controller);
+    var activate = function () {
+
+    };
+    activate();
+  }
+
+  controller.$inject = deps;
+  app.controller(app.name + '.' + controllername, controller);
 };
